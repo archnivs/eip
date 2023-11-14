@@ -24,15 +24,10 @@ const mouseEvent = e => {
 };
 
 
-setTimeout(() => {
-    document.addEventListener('mouseout', mouseEvent);
-    document.addEventListener('keydown', exit);
-    document.querySelector('.eip-popup').addEventListener('click', exit);
-}, 0);
-/* if (!EIPCookies.getCookie(EIP.cookie_name)) {
+if (!EIPCookies.getCookie(EIP.cookie_name)) {
     setTimeout(() => {
         document.addEventListener('mouseout', mouseEvent);
         document.addEventListener('keydown', exit);
         document.querySelector('.eip-popup').addEventListener('click', exit);
     }, 0);
-} */
+} 
