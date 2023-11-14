@@ -1,0 +1,62 @@
+
+
+.eip-popup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.eip-popup.visible {
+    transform: scale(1);
+}
+
+.eip-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 800px;
+    border-radius: 12px;
+}
+
+.eip-popup-content > .close {
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 36px;
+    line-height: 1;
+}
+
+
+
+.eip-popup-header {
+    padding: 20px;
+}
+
+.eip-popup-body {
+    padding: 20px;
+}
+
+.eip-cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.eip-cols > .col {
+    flex: 1 1 360px; 
+    flex: 0 1 360px; 
+}
